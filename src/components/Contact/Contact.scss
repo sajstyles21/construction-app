@@ -1,0 +1,128 @@
+.contact {
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 50px;
+  }
+
+  .contact-us .map > img {
+    @media screen and (max-width: 700px) {
+      height: 250px;
+    }
+  }
+}
+.address_phones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .address {
+    background: #ffffff;
+    box-shadow: 0px 2px 25px rgba(0, 33, 91, 0.2);
+    padding: 70px 40px;
+    margin-top: -80px;
+
+    span {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 15px;
+
+      text-transform: uppercase;
+
+      color: #41444b;
+    }
+
+    h2 {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 38px;
+      margin: 0;
+      color: #00215b;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .phones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+    @media screen and (max-width: 700px) {
+      margin-left: 0;
+    }
+
+    span.title {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #41444b;
+    }
+
+    .data {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 180px;
+      margin-left: 15px;
+      gap: 5px;
+    }
+  }
+
+  .emails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span.title {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: #41444b;
+    }
+
+    .data {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 180px;
+      margin-left: 15px;
+      gap: 5px;
+    }
+  }
+}
+
+.map {
+  img {
+    width: 100%;
+  }
+}

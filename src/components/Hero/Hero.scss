@@ -1,0 +1,200 @@
+:root {
+  --red-color: #d2153d;
+  --dark-blue-color: #00215b;
+}
+
+.btn {
+  background: #d2153d;
+  color: #fff;
+  font-family: "Kanit";
+  width: 240px;
+  height: 64px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+
+  @media screen and (max-width: 700px) {
+    width: 180px;
+  }
+}
+
+.btn.icon::after {
+  content: url("http://localhost:3000/images/long-arrow-alt-right.svg");
+  margin-left: 10px;
+}
+
+.top {
+  background-size: cover;
+  height: 700px;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+  }
+
+  .top-content {
+    position: relative;
+    margin: 0 auto;
+    top: 247px;
+    width: 801px;
+    height: 406px;
+
+    @media screen and (max-width: 1100px) {
+      padding: 50px;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      padding: 0 50px;
+      top: 150px;
+    }
+
+    span {
+      font-family: "Kanit";
+      font-style: normal;
+      font-size: 50px;
+      color: #ffffff;
+
+      @media screen and (max-width: 700px) {
+        font-size: 30px;
+      }
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .completed-projects {
+    background: var(--dark-blue-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    padding-right: 50px;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    span.number {
+      font-weight: 600;
+      font-size: 60px;
+    }
+
+    span.text {
+      font-size: 15px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .experience {
+    background: var(--red-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    padding-right: 50px;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      text-align: center;
+    }
+
+    span.number {
+      font-weight: 600;
+      font-size: 60px;
+    }
+
+    span.text {
+      font-size: 15px;
+      margin-top: -15px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .card {
+    margin-top: -165px;
+    width: 450px;
+    background: #fff;
+    padding: 10px 40px;
+    box-shadow: 0px 2px 25px rgba(0, 33, 91, 0.2);
+
+    @media screen and (max-width: 1100px) {
+      margin-top: -100px;
+    }
+
+    @media screen and (max-width: 700px) {
+      margin-top: 0;
+      width: 100%;
+    }
+
+    h2 {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 500;
+      color: #00215b;
+    }
+    span {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 500;
+      color: #00215b;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+      margin-top: 0;
+
+      color: #41444b;
+    }
+
+    .card-values {
+      .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .single-card {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

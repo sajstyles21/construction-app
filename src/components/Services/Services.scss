@@ -1,0 +1,161 @@
+.sections {
+  display: flex;
+  margin-top: 250px;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 250px;
+  }
+
+  .left-section {
+    width: 33%;
+
+    @media screen and (max-width: 1100px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 600px;
+    }
+  }
+
+  .first-section {
+    background: url("http://localhost:3000/images/section-right-one.png");
+    background-size: cover;
+    height: 600px;
+    width: 33%;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      height: 300px;
+    }
+
+    .inner-first {
+      background-color: rgba(0, 33, 91, 0.85);
+      height: 600px;
+      padding: 50px;
+      color: #fff;
+
+      @media screen and (max-width: 700px) {
+        height: 300px;
+      }
+
+      h3 {
+        font-family: "Kanit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+
+        @media screen and (max-width: 1100px) {
+          font-size: 25px;
+          line-height: 24px;
+        }
+      }
+
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 28px;
+        color: #d4d7dd;
+      }
+    }
+  }
+
+  .second-section {
+    background: url("http://localhost:3000/images/section-right-two.png");
+    background-size: cover;
+    height: 600px;
+    width: 33%;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      height: 300px;
+    }
+
+    .inner-second {
+      background-color: rgba(210, 21, 61, 0.85);
+      height: 600px;
+      padding: 50px;
+      color: #fff;
+
+      @media screen and (max-width: 700px) {
+        height: 300px;
+      }
+
+      h3 {
+        font-family: "Kanit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        @media screen and (max-width: 1100px) {
+          font-size: 25px;
+          line-height: 24px;
+        }
+      }
+
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 28px;
+        color: #d4d7dd;
+      }
+    }
+  }
+
+  .third-section {
+    background: url("http://localhost:3000/images/section-right-three.png");
+    background-size: cover;
+    height: 600px;
+    width: 33%;
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      height: 300px;
+    }
+
+    .inner-third {
+      background-color: rgba(0, 33, 91, 0.85);
+      height: 600px;
+      padding: 50px;
+      color: #fff;
+
+      @media screen and (max-width: 700px) {
+        height: 300px;
+      }
+
+      h3 {
+        font-family: "Kanit";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        @media screen and (max-width: 1100px) {
+          font-size: 25px;
+          line-height: 24px;
+        }
+      }
+
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 28px;
+        color: #d4d7dd;
+      }
+    }
+  }
+}

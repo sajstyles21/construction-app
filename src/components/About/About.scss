@@ -1,0 +1,144 @@
+/* This CSS will print because %message-shared is extended. */
+%p-css {
+  font-family: "Lato";
+  font-style: normal;
+  font-size: 17px;
+  line-height: 28px;
+
+  color: #41444b;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1180px;
+  margin: 0 auto;
+  gap: 100px;
+  margin-top: 161px;
+
+  @media screen and (max-width: 1100px) {
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    gap: 150px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 50px;
+  }
+
+  .right-content {
+    position: relative;
+    flex: 1;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+    }
+
+    .img-one {
+      position: absolute;
+      top: -172px;
+      left: 100px;
+
+      @media screen and (max-width: 1100px) {
+        left: 40%;
+      }
+
+      @media screen and (max-width: 700px) {
+        left: 30%;
+      }
+
+      img {
+        @media screen and (max-width: 700px) {
+          width: 190px;
+          height: 190px;
+        }
+      }
+    }
+
+    .video-icon {
+      position: absolute;
+      top: -12px;
+      left: 80px;
+      z-index: 1;
+
+      @media screen and (max-width: 1100px) {
+        left: 39%;
+      }
+
+      @media screen and (max-width: 700px) {
+        left: 29%;
+        top: -85px;
+      }
+
+      img {
+        @media screen and (max-width: 700px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+
+    .img-two {
+      position: absolute;
+      top: 47%;
+      left: -110px;
+
+      @media screen and (max-width: 1100px) {
+        left: 24%;
+        top: -2%;
+      }
+
+      @media screen and (max-width: 700px) {
+        left: 5%;
+        top: -76px;
+      }
+
+      img {
+        @media screen and (max-width: 700px) {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .left-content {
+    flex: 1 1 7%;
+
+    @media screen and (max-width: 1100px) {
+      width: 100%;
+      padding: 50px;
+    }
+
+    h1 {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 64px;
+      color: #16213e;
+      margin: 0;
+
+      @media screen and (max-width: 700px) {
+        font-size: 30px;
+        line-height: 35px;
+      }
+    }
+
+    span {
+      color: var(--red-color);
+    }
+
+    p.light {
+      @extend %p-css;
+      font-weight: 400;
+    }
+
+    p.dark {
+      @extend %p-css;
+      font-weight: 700;
+    }
+  }
+}

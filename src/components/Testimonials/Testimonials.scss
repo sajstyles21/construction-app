@@ -1,0 +1,106 @@
+section.testimonials {
+  width: 930px;
+  margin: 0 auto;
+  margin-top: 125px;
+
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+    padding: 50px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 50px;
+  }
+
+  .upper-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    span {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 15px;
+
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #d2153d;
+    }
+
+    h1 {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 55px;
+      line-height: 64px;
+      margin: 10px;
+      text-align: center;
+
+      color: #16213e;
+
+      @media screen and (max-width: 700px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .testimonials-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      img {
+        @media screen and (max-width: 700px) {
+          width: 50px;
+        }
+      }
+    }
+
+    img {
+      @media screen and (max-width: 700px) {
+        width: 200px;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    p {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 28px;
+
+      color: #41444b;
+    }
+
+    h6 {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 26px;
+      color: #16213e;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+
+    span {
+      font-family: "Kanit";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+
+      color: #001ed3;
+    }
+  }
+}
