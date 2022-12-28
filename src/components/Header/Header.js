@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [navClass, setNavClass] = useState("");
@@ -29,11 +30,11 @@ const Header = () => {
         {/* Start of nav menu */}
         <nav className={navClass}>
           <div className="logo">
-            <a href="/">A K Bansal</a>
+            <Link to="/">A K Bansal</Link>
           </div>
           <ul className={navClass}>
             <li>
-              <a href="/home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>
               <a href="#">About</a>
@@ -53,7 +54,7 @@ const Header = () => {
         {/* Start of mobile nav menu */}
         <nav className={`mobile-menu ${navClass}`}>
           <div className="logo">
-            <a href="/">A K Bansal</a>
+            <Link to="/">A K Bansal</Link>
           </div>
           <div className="grid" onClick={handleMenuClick}>
             =
@@ -67,7 +68,7 @@ const Header = () => {
           </div>
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <Link to="/home">Home</Link>
             </li>
             <li>
               <a href="#">About</a>
