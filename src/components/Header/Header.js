@@ -28,10 +28,12 @@ const Header = () => {
       <div className="wrapper">
         {/* Start of nav menu */}
         <nav className={navClass}>
-          <div className="logo">AK Bansal</div>
+          <div className="logo">
+            <a href="/">A K Bansal</a>
+          </div>
           <ul className={navClass}>
             <li>
-              <a href="#">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>
               <a href="#">About</a>
@@ -50,7 +52,9 @@ const Header = () => {
         {/* End of nav menu */}
         {/* Start of mobile nav menu */}
         <nav className={`mobile-menu ${navClass}`}>
-          <div className="logo">AK Bansal</div>
+          <div className="logo">
+            <a href="/">A K Bansal</a>
+          </div>
           <div className="grid" onClick={handleMenuClick}>
             =
           </div>
@@ -63,7 +67,7 @@ const Header = () => {
           </div>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <a href="/home">Home</a>
             </li>
             <li>
               <a href="#">About</a>

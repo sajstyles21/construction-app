@@ -5,6 +5,11 @@
     width: 100%;
   }
 
+  .logo a {
+    text-decoration: none;
+    color: #00215b;
+  }
+
   .mobile-menu-container.active {
     left: 0;
 
@@ -66,6 +71,11 @@
     padding: 0 20px;
     z-index: 9999;
     transition: all 500ms ease;
+
+    .logo a {
+      text-decoration: none;
+      color: #fff;
+    }
 
     @media screen and (max-width: 1100px) {
       width: 100%;
