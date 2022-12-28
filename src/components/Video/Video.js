@@ -5,7 +5,7 @@ const Video = () => {
   return (
     <section className="video">
       <div className="inner-wrapper">
-        <img src="images/video.jpg" alt="video-button"></img>
+        <img src="images/Video.jpg" alt="video-button"></img>
       </div>
     </section>
   );
