@@ -9,6 +9,10 @@ body {
   font-family: "Kanit", sans-serif;
 }
 
+#root {
+  overflow: hidden;
+}
+
 ul,
 li {
   list-style-type: none;
