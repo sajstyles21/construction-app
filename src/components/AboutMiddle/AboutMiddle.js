@@ -23,7 +23,7 @@ const AboutMiddle = () => {
                 text ever since the 1500s, when an unknown printer took a galley
                 of type and scrambled it to make a type specimen book.{" "}
               </p>
-              <h5>John Doe, CEO</h5>
+              <h5>Hitesh Bansal, CEO</h5>
             </div>
             <a href="#" className="btn icon red">
               Learn more

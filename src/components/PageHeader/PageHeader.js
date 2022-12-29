@@ -14,7 +14,7 @@ const PageHeader = () => {
           </div>
           <div className="right-content">
             <span>Call Us Today</span>
-            <h3>+1 123 4567 789</h3>
+            <h3>+91 8437085852</h3>
           </div>
         </div>
       </div>
