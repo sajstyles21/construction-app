@@ -3,6 +3,11 @@
   .inner-middle-content {
     width: 100%;
     margin-top: 100px;
+
+    @media screen and (max-width: 1100px) {
+      text-align: center;
+    }
+
     .top-content {
       display: flex;
       justify-content: center;
@@ -41,7 +46,6 @@
           }
 
           h2 {
-            font-family: "Kanit";
             font-style: normal;
             font-weight: 900;
             font-size: 60px;
@@ -51,7 +55,6 @@
             margin: 0;
           }
           span {
-            font-family: "Kanit";
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -76,7 +79,6 @@
         }
 
         h6 {
-          font-family: "Kanit";
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
@@ -87,7 +89,6 @@
         }
 
         h2 {
-          font-family: "Kanit";
           font-style: normal;
           font-weight: 600;
           font-size: 40px;
@@ -117,12 +118,123 @@
             color: #000000;
           }
           h5 {
-            font-family: "Kanit";
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
             color: #000000;
             margin: 0;
+          }
+        }
+      }
+    }
+
+    .bottom-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 35px;
+
+      .upper-content {
+        background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+          ),
+          url("http://akbansalcompany.com/images/bridge.png");
+        background-size: cover;
+        width: 100%;
+
+        .inner-top-content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          min-height: 590px;
+
+          span {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #ffffff;
+          }
+
+          h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 50px;
+            margin: 0;
+            color: #ffffff;
+          }
+          p {
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+
+      .lower-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: -45px;
+
+        .box-one,
+        .box-two,
+        .box-three {
+          background: #ffffff;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.14);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+          gap: 15px;
+          flex: 1;
+
+          @media screen and (max-width: 1100px) {
+            flex-direction: column;
+          }
+
+          .box-one-content,
+          .box-two-content,
+          .box-three-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h6 {
+              margin: 0;
+              font-style: normal;
+              font-weight: 700;
+              font-size: 15px;
+              color: rgba(0, 33, 91, 0.85);
+            }
+
+            span {
+              background: transparent;
+              color: #000;
+              font-style: normal;
+              font-weight: 275;
+              font-size: 15px;
+            }
+          }
+          span.number {
+            background: #d2153d;
+            width: 70px;
+            color: #fff;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            text-align: center;
+            padding: 0 10px;
           }
         }
       }
