@@ -45,7 +45,7 @@ const RequestAQuote = () => {
                 message: "",
               }}
               validationSchema={QuoteSchema}
-              onSubmit={(values) => {
+              onSubmit={(values, { resetForm }) => {
                 setIsLoading(true);
                 send(
                   "service_1fh41av",
@@ -57,6 +57,7 @@ const RequestAQuote = () => {
                     if (response.status === 200) {
                       setSuccessMessage("Thank you for contacting us");
                       setIsLoading(false);
+                      resetForm({ values: "" });
                     }
                   })
                   .catch((err) => {
