@@ -5,9 +5,15 @@ import PageHeader from "../components/PageHeader/PageHeader";
 import RequestAQuote from "../components/RequestAQuote/RequestAQuote";
 
 const About = () => {
+  const pageData = {
+    name: "About Us",
+    breadCrumb: "Home / About Us",
+    imageClass: "about-background-image",
+  };
+
   return (
     <>
-      <PageHeader />
+      <PageHeader {...pageData} />
       <AboutMiddle />
       <RequestAQuote />
       <Footer />

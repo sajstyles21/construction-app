@@ -2,15 +2,17 @@ import React from "react";
 import Header from "../Header/Header";
 import "./PageHeader.scss";
 
-const PageHeader = () => {
+const PageHeader = (props) => {
+  console.log(props);
+
   return (
-    <div className="page-header">
+    <div className={`${props.imageClass} page-header`}>
       <div className="header-div">
         <Header />
         <div className="inner-page-header">
           <div className="left-content">
-            <h2>About Us</h2>
-            <span>Home / About Us</span>
+            <h2>{props.name}</h2>
+            <span>{props.breadCrumb}</span>
           </div>
           <div className="right-content">
             <span>Call Us Today</span>

@@ -1,0 +1,18 @@
+.portfolio-images {
+  margin-top: 100px;
+  .images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(373px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-gap: 15px;
+
+    @media screen and (max-width: 1100px) {
+      grid-gap: 0;
+    }
+
+    @media screen and (max-width: 700px) {
+      grid-gap: 15px;
+    }
+  }
+}
