@@ -3,8 +3,6 @@ import Header from "../Header/Header";
 import "./PageHeader.scss";
 
 const PageHeader = (props) => {
-  console.log(props);
-
   return (
     <div className={`${props.imageClass} page-header`}>
       <div className="header-div">
