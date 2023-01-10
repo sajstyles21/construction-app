@@ -5,6 +5,17 @@ const PortfolioMiddle = () => {
   return (
     <section className="portfolio-images">
       <div className="images">
+        <div className="portfolio-image-one"></div>
+        <div className="portfolio-image-two"></div>
+        <div className="portfolio-image-three"></div>
+        <div className="portfolio-image-four"></div>
+        <div className="portfolio-image-five"></div>
+        <div className="portfolio-image-six"></div>
+        <div className="portfolio-image-seven"></div>
+        <div className="portfolio-image-eight"></div>
+        <div className="portfolio-image-nine"></div>
+      </div>
+      {/*<div className="images">
         <img src="images/ione.png" alt="one" />
         <img src="images/itwo.png" alt="two" />
         <img src="images/ithree.png" alt="three" />
@@ -14,7 +25,7 @@ const PortfolioMiddle = () => {
         <img src="images/iseven.png" alt="seven" />
         <img src="images/ieight.png" alt="eight" />
         <img src="images/inine.png" alt="nine" />
-      </div>
+  </div> */}
     </section>
   );
 };
