@@ -3,6 +3,11 @@
     url("../../../public/images/about.png");
 }
 
+.services-background-image {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../public/images/service.jpeg");
+}
+
 .portfolio-background-image {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../public/images/portfolio.png");

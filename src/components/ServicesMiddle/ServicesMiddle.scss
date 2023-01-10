@@ -1,0 +1,95 @@
+.services {
+  margin-top: 100px;
+  .inner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 1100px) {
+      width: 80%;
+    }
+
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .single-service-card {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+
+      @media screen and (max-width: 700px) {
+        width: 95%;
+      }
+    }
+
+    .single-service-card.service-one {
+      background: url("../../../public/images/service-one.jpeg"), #d9d9d9;
+      height: 350px;
+      background-size: cover;
+    }
+
+    .single-service-card.service-two {
+      background: url("../../../public/images/service-two.jpeg"), #d9d9d9;
+      height: 350px;
+      background-size: cover;
+    }
+
+    .single-service-card.service-three {
+      background: url("../../../public/images/service-three.jpeg"), #d9d9d9;
+      height: 350px;
+      background-size: cover;
+    }
+
+    .single-service-card.service-four {
+      background: url("../../../public/images/service-four.jpeg"), #d9d9d9;
+      height: 350px;
+      background-size: cover;
+    }
+
+    .single-service-card.red {
+      background: #d2153d;
+      color: #fff;
+      padding: 30px;
+      height: 350px;
+
+      .learn_more {
+        border: 1px solid #fff;
+        width: 150px;
+        height: 50px;
+        padding: 10px;
+      }
+      span {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0.05em;
+
+        @media screen and (max-width: 700px) {
+          font-size: 15px;
+        }
+      }
+      p {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        @media screen and (max-width: 700px) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
