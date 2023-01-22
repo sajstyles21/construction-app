@@ -1,0 +1,11 @@
+.address-map {
+  margin-top: 70px;
+  .google-map-code {
+    display: block;
+    width: 100%;
+
+    iframe {
+      width: 100%;
+    }
+  }
+}
