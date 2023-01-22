@@ -22,13 +22,14 @@
     }
 
     .quote-form {
-      padding: 50px;
+      padding: 30px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
       gap: 10px;
       flex: 2;
+      width: 100%;
 
       h6 {
         font-style: normal;
@@ -47,46 +48,54 @@
         margin: 0;
       }
 
-      .form form {
+      .form {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        width: 100%;
 
-        button {
-          border: none;
-          padding-top: 0;
-          width: 150px;
-          height: 50px;
-        }
-
-        input {
+        form {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 10px;
           width: 100%;
-          padding: 4px 0px 4px 8px;
-          height: 36px;
-          background: #ffffff;
-          border: 1px solid rgba(0, 0, 0, 0.25);
-        }
 
-        textarea {
-          width: 100%;
-          padding: 4px 103px 4px 20px;
-        }
+          button {
+            border: none;
+            padding-top: 0;
+            width: 150px;
+            height: 50px;
+          }
 
-        .first_name,
-        .last_name,
-        .email,
-        .phone_number {
-          width: 49%;
+          input {
+            width: 100%;
+            padding: 4px 0px 4px 8px;
+            height: 36px;
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+          }
 
-          @media screen and (max-width: 1100px) {
+          textarea {
+            width: 100%;
+            padding: 4px 103px 4px 20px;
+          }
+
+          .first_name,
+          .last_name,
+          .email,
+          .phone_number {
+            width: 49%;
+
+            @media screen and (max-width: 1100px) {
+              width: 100%;
+            }
+          }
+
+          .message {
             width: 100%;
           }
-        }
-
-        .message {
-          width: 100%;
         }
       }
     }
