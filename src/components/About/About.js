@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const About = () => {
   return (
@@ -23,18 +24,28 @@ const About = () => {
         </div>
         <div className="right-content">
           <div className="img-one">
-            <img width="350" height="350" src="images/img1.png" alt="img-one" />
+            <LazyLoadImage
+              src="images/img1.png"
+              width={350}
+              height={350}
+              alt="img-one"
+            />
           </div>
           <div className="video-icon">
-            <img
-              width="60"
-              height="60"
+            <LazyLoadImage
               src="images/video_icon.svg"
+              width={60}
+              height={60}
               alt="video-icon"
             />
           </div>
           <div className="img-two">
-            <img width="300" height="387" src="images/img2.png" alt="img-two" />
+            <LazyLoadImage
+              src="images/img2.png"
+              width={300}
+              height={387}
+              alt="img-two"
+            />
           </div>
         </div>
       </div>

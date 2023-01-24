@@ -1,5 +1,6 @@
 import React from "react";
 import "./Testimonials.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Testimonials = () => {
   return (
@@ -10,9 +11,9 @@ const Testimonials = () => {
           <h1>Our Clients Say</h1>
         </div>
         <div className="testimonials-data">
-          <img src="images/client.png" alt="client"></img>
+          <LazyLoadImage src="images/client.png" alt="client" />
           <div className="content">
-            <img src="images/quote_icon.svg" alt="icon"></img>
+            <LazyLoadImage src="images/quote_icon.svg" alt="icon" />
             <p>
               Suspendisse tortor enim, varius et porttitor sit amet, posuere
               vitae massa. Proin ac quam eu erat semper sagittis in vitae elit.

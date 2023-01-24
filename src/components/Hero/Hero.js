@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./Hero.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Hero = (props) => {
   return (
@@ -37,7 +38,7 @@ const Hero = (props) => {
           <div className="card-values">
             <div className="card-content">
               <div className="image">
-                <img src="images/engineer.png" alt="Engineer" />
+                <LazyLoadImage src="images/engineer.png" alt="Engineer" />
               </div>
               <div className="single-card">
                 <span>General Contract</span>
@@ -49,7 +50,7 @@ const Hero = (props) => {
             </div>
             <div className="card-content">
               <div className="image">
-                <img src="images/ruler.png" alt="Ruler" />
+                <LazyLoadImage src="images/ruler.png" alt="Ruler" />
               </div>
 
               <div className="single-card">
@@ -62,7 +63,10 @@ const Hero = (props) => {
             </div>
             <div className="card-content">
               <div className="image">
-                <img src="images/measuring-tool.png" alt="Measuring Tool" />
+                <LazyLoadImage
+                  src="images/measuring-tool.png"
+                  alt="Measuring Tool"
+                />
               </div>
 
               <div className="single-card">

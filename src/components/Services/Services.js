@@ -1,12 +1,13 @@
 import React from "react";
 import "./Services.scss";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Services = () => {
   return (
     <section className="services">
       <div className="sections">
         <div className="left-section">
-          <img src="images/service-one.png" alt="section-image" />
+          <LazyLoadImage src="images/service-one.png" alt="section-image" />
         </div>
         <div className="first-section">
           <div className="inner-first">
@@ -14,7 +15,7 @@ const Services = () => {
             <p>
               Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus
             </p>
-            <img src="images/red-sign.svg" alt="Red-sign" />
+            <LazyLoadImage src="images/red-sign.svg" alt="Red-sign" />
           </div>
         </div>
         <div className="second-section">
@@ -23,7 +24,7 @@ const Services = () => {
             <p>
               Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat
             </p>
-            <img src="images/blue-sign.svg" alt="Blue-sign" />
+            <LazyLoadImage src="images/blue-sign.svg" alt="Blue-sign" />
           </div>
         </div>
         <div className="third-section">
@@ -32,7 +33,7 @@ const Services = () => {
             <p>
               Nullam tincidunt libero eu augue eleifend, vitae condimentum lacus
             </p>
-            <img src="images/red-sign.svg" alt="Red-sign" />
+            <LazyLoadImage src="images/red-sign.svg" alt="Red-sign" />
           </div>
         </div>
       </div>
