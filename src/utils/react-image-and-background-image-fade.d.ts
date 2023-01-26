@@ -1,2 +1,1 @@
-declare module 'react-image-and-background-image-fade' {
-};
+declare module 'react-image-and-background-image-fade';
