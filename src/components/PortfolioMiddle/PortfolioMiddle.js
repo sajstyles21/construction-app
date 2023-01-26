@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "./PortfolioMiddle.scss";
-import { BackgroundImage } from "react-image-and-background-image-fade";
+import LazyLoad from "react-lazyload";
 import { isMobile } from "react-device-detect";
 
 const PortfolioMiddle = () => {
@@ -20,7 +20,7 @@ const PortfolioMiddle = () => {
   });
 
   const getWidthAccordingToDevice = (device) => {
-    return device === isMobile ? setWidth("100%") : setWidth("32%");
+    return device === isMobile ? setWidth("100%") : setWidth("100%");
   };
 
   useEffect(() => {
@@ -32,14 +32,12 @@ const PortfolioMiddle = () => {
       <div className="images">
         {images?.map((item) => {
           return (
-            <BackgroundImage
-              key={item.className}
-              src={item.src}
-              width={width}
-              height="400px"
+            <LazyLoad
+              height={200}
               className={"portfolio-image-" + item.className}
-              lazyLoad
-            />
+            >
+              <img src={item.src} width={width} height="400px" />
+            </LazyLoad>
           );
         })}
       </div>
