@@ -1,19 +1,47 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "./PortfolioMiddle.scss";
+import { BackgroundImage } from "react-image-and-background-image-fade";
+import { isMobile } from "react-device-detect";
 
 const PortfolioMiddle = () => {
+  const [width, setWidth] = useState("32%");
+  const images = useMemo(() => {
+    return [
+      { className: "one", src: "images/ione.png" },
+      { className: "two", src: "images/itwo.png" },
+      { className: "three", src: "images/ithree.png" },
+      { className: "four", src: "images/ifour.png" },
+      { className: "five", src: "images/ifive.png" },
+      { className: "six", src: "images/isix.png" },
+      { className: "seven", src: "images/iseven.png" },
+      { className: "eight", src: "images/ieight.png" },
+      { className: "nine", src: "images/inine.png" },
+    ];
+  });
+
+  const getWidthAccordingToDevice = (device) => {
+    return device === isMobile ? setWidth("100%") : setWidth("32%");
+  };
+
+  useEffect(() => {
+    getWidthAccordingToDevice();
+  });
+
   return (
     <section className="portfolio-images">
       <div className="images">
-        <div className="portfolio-image-one"></div>
-        <div className="portfolio-image-two"></div>
-        <div className="portfolio-image-three"></div>
-        <div className="portfolio-image-four"></div>
-        <div className="portfolio-image-five"></div>
-        <div className="portfolio-image-six"></div>
-        <div className="portfolio-image-seven"></div>
-        <div className="portfolio-image-eight"></div>
-        <div className="portfolio-image-nine"></div>
+        {images?.map((item) => {
+          return (
+            <BackgroundImage
+              key={item.className}
+              src={item.src}
+              width={width}
+              height="400px"
+              className={"portfolio-image-" + item.className}
+              lazyLoad
+            />
+          );
+        })}
       </div>
       {/*<div className="images">
         <img src="images/ione.png" alt="one" />

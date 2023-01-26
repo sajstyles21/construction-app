@@ -27,7 +27,7 @@
 
     @media screen and (max-width: 480px) {
       flex-direction: column;
-      //width: 100%;
+      //width: 100%!important;
       justify-content: flex-start;
     }
 
@@ -35,15 +35,15 @@
       background: url("../../../public/images/ione.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
 
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
 
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -52,13 +52,13 @@
       background: url("../../../public/images/itwo.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -67,13 +67,13 @@
       background: url("../../../public/images/ithree.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -82,13 +82,13 @@
       background: url("../../../public/images/ifour.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -97,13 +97,13 @@
       background: url("../../../public/images/ifive.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -112,13 +112,13 @@
       background: url("../../../public/images/isix.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -127,13 +127,13 @@
       background: url("../../../public/images/iseven.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -142,13 +142,13 @@
       background: url("../../../public/images/ieight.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
@@ -157,13 +157,13 @@
       background: url("../../../public/images/inine.png"), #d9d9d9;
       height: 400px;
       background-size: cover;
-      width: 32%;
+      width: 100% !important;
       @media screen and (max-width: 700px) {
         height: 300px;
-        width: 32%;
+        width: 100% !important;
       }
       @media screen and (max-width: 480px) {
-        width: 100%;
+        width: 100% !important;
         height: 400px;
       }
     }
