@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { ErrorBoundary } from "react-error-boundary";
 import { Suspense } from "react";
 import ErrorFallback from "../../utils/ErrorFallback";
+import useSpinner from "../../customHooks/useSpinner";
 const Header = React.lazy(() => import("../Header/Header"));
 
 const Hero = (props) => {
+  const spinnerData = {
+    height: 80,
+    width: 80,
+  };
+
+  const spinner = useSpinner(spinnerData);
+
   return (
     <div className="hero-section">
       <div className="top" style={{ backgroundImage: "url(/images/hero.png)" }}>
         <ErrorBoundary FallbackComponent={ErrorFallback}>
-          <Suspense fallback={<h1>Loading....</h1>}>
+          <Suspense fallback={spinner}>
             <Header />
           </Suspense>
         </ErrorBoundary>

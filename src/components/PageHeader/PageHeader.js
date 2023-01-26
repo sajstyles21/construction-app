@@ -3,14 +3,22 @@ import "./PageHeader.scss";
 import { ErrorBoundary } from "react-error-boundary";
 import { Suspense } from "react";
 import ErrorFallback from "../../utils/ErrorFallback";
+import useSpinner from "../../customHooks/useSpinner";
 const Header = React.lazy(() => import("../Header/Header"));
 
 const PageHeader = (props) => {
+  const spinnerData = {
+    height: 80,
+    width: 80,
+  };
+
+  const spinner = useSpinner(spinnerData);
+
   return (
     <div className={`${props.imageClass} page-header`}>
       <div className="header-div">
         <ErrorBoundary FallbackComponent={ErrorFallback}>
-          <Suspense fallback={<h1>Loading....</h1>}>
+          <Suspense fallback={spinner}>
             <Header />
           </Suspense>
         </ErrorBoundary>
