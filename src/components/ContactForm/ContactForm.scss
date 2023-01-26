@@ -10,19 +10,19 @@
 
   form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 15px;
 
-    @media screen and (max-width: 700px) {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+    div {
+      display: grid;
+    }
+
+    @media (min-width: 43.75em) {
+      grid-template-columns: 1fr 1fr;
     }
   }
 
   .message {
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column: 1/-1;
   }
 
   input {
@@ -35,7 +35,6 @@
     font-size: 18px;
     line-height: 37px;
     padding: 0 10px;
-    width: 100%;
   }
 
   textarea {
@@ -47,7 +46,6 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 37px;
-    width: 100%;
     padding: 0 10px;
   }
 }
