@@ -34,9 +34,10 @@ const PortfolioMiddle = () => {
           return (
             <LazyLoad
               height={400}
+              offset={300}
               className={"portfolio-image-" + item.className}
             >
-              <img src={item.src} width={width} height="400px" />
+              <img src={item.src} width={width} height={400} />
             </LazyLoad>
           );
         })}
