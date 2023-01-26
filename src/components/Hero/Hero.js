@@ -1,13 +1,20 @@
 import React from "react";
-import Header from "../Header/Header";
 import "./Hero.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { ErrorBoundary } from "react-error-boundary";
+import { Suspense } from "react";
+import ErrorFallback from "../../utils/ErrorFallback";
+const Header = React.lazy(() => import("../Header/Header"));
 
 const Hero = (props) => {
   return (
     <div className="hero-section">
       <div className="top" style={{ backgroundImage: "url(/images/hero.png)" }}>
-        <Header />
+        <ErrorBoundary FallbackComponent={ErrorFallback}>
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <Header />
+          </Suspense>
+        </ErrorBoundary>
         <div className="top-content">
           <span>
             <b>Construction solution</b> <br />
