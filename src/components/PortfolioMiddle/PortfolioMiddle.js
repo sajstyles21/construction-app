@@ -33,6 +33,7 @@ const PortfolioMiddle = () => {
         {images?.map((item) => {
           return (
             <LazyLoad
+              key={item.className}
               height={400}
               offset={300}
               className={"portfolio-image-" + item.className}
