@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import "./PortfolioMiddle.scss";
-import LazyLoad from "react-lazyload";
+import LazyLoad from "react-lazy-load";
 import { isMobile } from "react-device-detect";
 
 const PortfolioMiddle = () => {
@@ -33,7 +33,7 @@ const PortfolioMiddle = () => {
         {images?.map((item) => {
           return (
             <LazyLoad
-              height={200}
+              height={400}
               className={"portfolio-image-" + item.className}
             >
               <img src={item.src} width={width} height="400px" />
