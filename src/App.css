@@ -18,3 +18,8 @@ li {
   list-style-type: none;
   padding: 0px;
 }
+
+.error {
+  color: indianred;
+  margin-top: 0.5rem;
+}
